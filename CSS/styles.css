@@ -7,72 +7,79 @@
 }
 /* header || nav-bar */
 #nav{
-    background-color: #0a1238;
+    background-color: #050A30;
 }
 #header .navbar-brand{
-    color: #6bf4d9;
+    color: #7EC8E3;
 }
 #header .navbar-toggler{
-    background-color: #6bf4d9;
+    background-color: #42b0f9;
 }
 .offcanvas-header{
-    background-color: #0a1238
+    background-color: #050A30;
 }
 .offcanvas-header:hover{
-    border-bottom: 2px solid #6bf4d9;
+    border-bottom: 2px solid #7EC8E3;
     cursor: pointer;
 
 }
 .offcanvas-header #offcanvasNavbarLabel{
-    color: #6bf4d9 ;
+    color: #7EC8E3;
     font-weight: 700;
 }
 .offcanvas-header #btn-close{
-    background-color: #6bf4d9;
+    background-color: #7EC8E3;
 }
 .offcanvas-body{
-    background-color: #0a1238;
+    background-color: #050A30;
 }
 .offcanvas-body .nav-item .nav-link{
-    color: #6bf4d9;
+    color: #7EC8E3;
     font-weight: bold;
     text-align: center;
+    font-size: 3vh;
 }
 .offcanvas-body .nav-item .nav-link:hover{
-    color: #ffffff;
+    color: #7EC8E3;
     border-style: solid;
-    border-color: #6bf4d9;
+    border-color: #7EC8E3;
+
 }
 
 /* main content */
 #one{
-   background-color:  #030d2c;
+   background-color:  #050A30;
 }
 #main-content{
-    margin: 4% 0 1% 3%;
+    margin: 4% 0 1%;
+    padding-left: 3%;
     
 }
 #main-content .welcome{
     font-size: 8vh;
-    font-weight: bold;
     color: #ffffff;
 }
 #main-content .welcome .what{
-    color: #6bf4d9;
+    color: #42b0f9;
 }
 #contact-btn-holder{
-    margin: 0 0 2% 3%;
+    margin: 0 0 2%;
+    padding-left: 3%;
 }
 #contact-btn{
     width: 70%;
     border: none;
     background-color: transparent;
-    outline: 0.2px solid #6bf4d9;
-    color: #6bf4d9;
+    outline: 0.2px solid #7EC8E3;
+    color: #7EC8E3;
     padding: 5px;
     border-radius: 1px;
+
+    
 }
 #contact-btn:hover{
+  background-color: #42b0f9;
+  color: #050A30;
 
 
     
