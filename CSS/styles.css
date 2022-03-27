@@ -39,9 +39,8 @@
 }
 .offcanvas-body .nav-item .nav-link:hover{
     color: #ffffff;
-    border-left: 3px solid #6bf4d9;
-    border-style: groove;
-
+    border-style: solid;
+    border-color: #6bf4d9;
 }
 
 /* main content */
@@ -67,11 +66,12 @@
     width: 70%;
     border: none;
     background-color: transparent;
-    outline: 1px solid #6bf4d9;
+    outline: 0.2px solid #6bf4d9;
     color: #6bf4d9;
     padding: 5px;
 }
 #contact-btn:hover{
+
 
     
 }
