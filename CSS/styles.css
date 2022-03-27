@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+/* header || nav-bar */
 #nav{
     background-color: #0a1238;
 }
@@ -41,5 +42,22 @@
     border-left: 3px solid #6bf4d9;
     border-style: groove;
 
+}
+
+/* main content */
+#one{
+   background-color:  #030d2c;
+}
+#main-content{
+    padding: 10%;
+    
+}
+#main-content .welcome{
+    font-size: 8vh;
+    font-weight: bold;
+    color: #ffffff;
+}
+#main-content .welcome .what{
+    color: #6bf4d9;
 }
 
