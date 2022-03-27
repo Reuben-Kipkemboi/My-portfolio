@@ -5,8 +5,41 @@
     font-family: 'Montserrat', sans-serif;
 }
 #nav{
-    background-color: #399fd3;
+    background-color: #0a1238;
 }
-#header{
-    background-color: #399fd3;
+#header .navbar-brand{
+    color: #6bf4d9;
 }
+#header .navbar-toggler{
+    background-color: #6bf4d9;
+}
+.offcanvas-header{
+    background-color: #0a1238
+}
+.offcanvas-header:hover{
+    border-bottom: 2px solid #6bf4d9;
+    cursor: pointer;
+
+}
+.offcanvas-header #offcanvasNavbarLabel{
+    color: #6bf4d9 ;
+    font-weight: 700;
+}
+.offcanvas-header #btn-close{
+    background-color: #6bf4d9;
+}
+.offcanvas-body{
+    background-color: #0a1238;
+}
+.offcanvas-body .nav-item .nav-link{
+    color: #6bf4d9;
+    font-weight: bold;
+    text-align: center;
+}
+.offcanvas-body .nav-item .nav-link:hover{
+    color: #ffffff;
+    border-left: 3px solid #6bf4d9;
+    border-style: groove;
+
+}
+
