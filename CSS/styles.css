@@ -99,20 +99,18 @@ body {
     color: #61e294;
     padding: 8px;
     border-radius: 1px;
-
-
 }
 
 #contact-btn:hover {
     background-color: #61e294;
     color: #050A30;
-
-
-
-
 }
 
 /*portfolio section  */
+#portfolio .desc-button{
+    margin-right: 6%;
+
+}
 #portfolio .portfolio {
     font-size: 5vh;
     color: #61e294;
@@ -124,6 +122,10 @@ body {
     padding-left: 2%;
     line-height: 1.8;
 }
+.short-desc a {
+    color: #61e294;
+    text-decoration: none;
+}
 
 #portfolio #more-btn {
     width: 15%;
@@ -134,12 +136,11 @@ body {
     color: #7EC8E3;
     padding: 6px;
     border-radius: 1px;
-    margin-left: 2%;
 }
 #project-1{
     padding: 2%;
     border-top: 2px solid #970c10;
-    box-shadow: 5px 5px 5px solid #42b0f9;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
     height: 50vh;
     
 }
@@ -192,20 +193,24 @@ body {
 #project-2{
     padding: 2%;
     border-top: 2px solid #42b0f9;
-    box-shadow: 5px 5px 5px solid #61e294;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
     height: 50vh;
     
 }
 #project-3{
     padding: 2%;
     border-top: 2px solid #61e294;
-    box-shadow: 5px 5px 5px solid #42b0f9;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
     height: 50vh;
     
+}
+#row-2{
+    margin-top: 2%;
 }
 #project-4{
     padding: 2%;
     border-top: 2px solid #fb3640;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
 
 }
 #project-4 h6{
@@ -214,6 +219,7 @@ body {
 #project-5{
     padding: 2%;
     border-top: 2px solid #54086b;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
 
 }
 #project-5 h6{
@@ -222,11 +228,11 @@ body {
 #project-6{
     padding: 2%;
     border-top: 2px solid #f5928f;
+    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
 
 }
 #project-6 h6{
-    color: #f5928f;
-    
+    color: #f5928f;   
 }
 
 
