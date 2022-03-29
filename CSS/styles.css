@@ -94,16 +94,18 @@ body {
 #contact-btn {
     width: 70%;
     border: none;
-    background-color: transparent;
     outline: 0.2px solid #61e294;
     color: #61e294;
     padding: 8px;
     border-radius: 1px;
+    background: linear-gradient(to left, #050A30 50%, #61e294 50%) right;
+    background-size: 200%;
+    transition: .4s ease-out;
 }
 
 #contact-btn:hover {
-    background-color: #61e294;
-    color: #050A30;
+    color: #050A30; 
+    background-position: left;
 }
 
 /*portfolio section  */
@@ -136,9 +138,12 @@ body {
     color: #7EC8E3;
     padding: 6px;
     border-radius: 1px;
+    background: linear-gradient(to right, #050A30 50%, #61e294 50%) left;
+    background-size: 200%;
+    transition: .4s ease-out;
 }
 #portfolio .desc-button a #more-btn:hover{
-    background-color: #61e294;
+    background-position: right;
     color: #050A30;
 }
 #project-1{
