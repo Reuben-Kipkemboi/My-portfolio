@@ -244,7 +244,38 @@ body {
 .about{
     color: #61e294;
 }
-
+.about-myself{
+    color: #ffffff;
+    line-height: 1.6;
+}
+.education-background{
+    width: 30%;
+    border-left: 2px solid #61e294;
+    padding: 1% 3%;
+    height: 50vh;
+}
+.education-background h3{
+    border: 1px solid #61e294;
+    text-align: center;
+    color: #61e294;
+    border-radius: 4px;
+    font-size: 3vh;
+    padding: 2%;
+}
+.education-background h4{
+    font-size: 3vh;
+    text-align: center;
+    color: #d49ea0;
+    border-bottom: 1px solid #61e294;
+    padding: 1%;
+}
+.education-background .current{
+    color: #ffffff;
+    line-height: 1.6;
+}
+hr{
+    border: 2px solid #54086b;
+}
 
 
 
