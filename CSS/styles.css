@@ -127,8 +127,8 @@ body {
     text-decoration: none;
 }
 
-#portfolio #more-btn {
-    width: 15%;
+#portfolio .desc-button a #more-btn {
+    width: 210px;
     height: 7vh;
     border: none;
     background-color: transparent;
@@ -137,11 +137,15 @@ body {
     padding: 6px;
     border-radius: 1px;
 }
+#portfolio .desc-button a #more-btn:hover{
+    background-color: #61e294;
+    color: #050A30;
+}
 #project-1{
     padding: 2%;
     border-top: 2px solid #970c10;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
-    height: 50vh;
+    width: 30%;
     
 }
 #project-1 h6{
@@ -194,14 +198,14 @@ body {
     padding: 2%;
     border-top: 2px solid #42b0f9;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
-    height: 50vh;
-    
+    width: 30%;
+      
 }
 #project-3{
     padding: 2%;
     border-top: 2px solid #61e294;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
-    height: 50vh;
+    width: 30%;
     
 }
 #row-2{
@@ -211,6 +215,7 @@ body {
     padding: 2%;
     border-top: 2px solid #fb3640;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
+    width: 30%;
 
 }
 #project-4 h6{
@@ -220,7 +225,7 @@ body {
     padding: 2%;
     border-top: 2px solid #54086b;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
-
+    width: 30%;
 }
 #project-5 h6{
     color: #54086b;
@@ -229,10 +234,15 @@ body {
     padding: 2%;
     border-top: 2px solid #f5928f;
     box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
-
+    width: 30%;
 }
 #project-6 h6{
     color: #f5928f;   
+}
+
+/* About me */
+.about{
+    color: #61e294;
 }
 
 
