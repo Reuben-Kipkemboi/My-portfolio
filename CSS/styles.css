@@ -21,9 +21,51 @@
     font-size: 1.5vh;
     margin-left: 5px;
 }
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #4DC4AE;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand:hover {
+  color: #ffffff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
 .nav-span{
     color:#4DC4AE;
     margin-right: 2px;
+
+}
+.nav-item>.nav-link:hover{
+    color:#4DC4AE;
+    margin-right: 2px;
+
+}
+#resume-btn{
+    background-color: transparent;
+    outline: 1px solid #4DC4AE;
+    border-radius: 4px;
+    color: #ffffff;
+    background: linear-gradient(to left, #0A192F 50%, #4DC4AE 50%) right;
+    background-size: 200%;
+    transition: .4s ease-out;
+    
+}
+#resume-btn:hover{
+    background-position: left;
+    color: #0A192F;
 
 }
 #header .navbar-brand {
