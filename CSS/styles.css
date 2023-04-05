@@ -57,6 +57,7 @@
 
 }
 #resume-btn{
+    font-weight: 700;
     background-color: transparent;
     outline: 1px solid #4DC4AE;
     border-radius: 4px;
