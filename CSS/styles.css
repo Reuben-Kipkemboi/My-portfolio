@@ -15,68 +15,140 @@
     font-family: 'Lekton', sans-serif;
     /* font-family: 'Fira Code', monospace; */
 }
-#main-container{
+
+#main-container {
     height: 100vh;
-    background-color: #0A192F;
+    /* background-color: #0A192F; */
+    background-color: #1d1d1d;
+
 
 }
-#small-container{
+
+#small-container {
     height: 80vh;
 }
 
 
 /* header || nav-bar */
 
-#link-1, #link-2, #link-3,#link-4 {
+#link-1,
+#link-2,
+#link-3,
+#link-4 {
     color: #ffffff;
     font-size: 1.5vh;
     margin-left: 5px;
 }
+
 /* Color of the links BEFORE scroll */
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
-  color: #4DC4AE;
+    color: #a4ff91;
 }
 
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* An optional height of the navbar AFTER scroll */
 .navbar.navbar-scroll.navbar-scrolled {
-  padding-top: auto;
-  padding-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
 }
+
 .navbar-brand {
-  font-size: unset;
-  height: 3.5rem;
+    font-size: unset;
+    height: 3.5rem;
 }
-.nav-span{
-    color:#4DC4AE;
+
+.nav-span {
+    /* color:#4DC4AE; */
+    color: #a4ff91;
     margin-right: 2px;
 
 }
-.nav-item>.nav-link:hover{
-    color:#4DC4AE;
+
+.nav-item>.nav-link:hover {
+    /* color:#4DC4AE; */
+    color: #a4ff91;
     margin-right: 2px;
 
 }
-#resume-btn{
+
+#resume-btn {
     font-weight: 700;
     background-color: transparent;
-    outline: 1px solid #4DC4AE;
+    outline: 0.5px solid #a4ff91;
     border-radius: 4px;
     color: #ffffff;
-    background: linear-gradient(to left, #0A192F 50%, #4DC4AE 50%) right;
+    background: linear-gradient(to left, #1d1d1d 50%, #a4ff91 50%) right;
     background-size: 200%;
     transition: .4s ease-out;
-    
+
 }
-#resume-btn:hover{
+
+#resume-btn:hover {
     background-position: left;
     color: #0A192F;
 
+}
+
+#main-card {
+    background-color: transparent;
+    border: 0.2px solid #a4ff91;
+    background-color: #1d252c;
+    border: none;
+
+}
+
+.profile-header {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.3vh;
+    padding: 2%;
+    border: none;
+
+}
+
+#profile-card {
+    height: 70vh;
+    border: none;
+}
+
+.background-gif {
+    position: relative;
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .gif {
+    position: relative;
+    border-radius: 0% 0% 32% 28% / 10% 10% 40% 32%;
+    overflow: hidden;
+  }
+  
+  .image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    /* box-shadow: -8px 0 4px #a4ff91; */
+    /* background-color: #1d252c; */
+  } 
+.image>img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
