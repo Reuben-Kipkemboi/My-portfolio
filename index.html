@@ -53,18 +53,22 @@
         <div class="container d-flex justify-content-center align-items-center" id="small-container">
             <div class="card col-md-12 col-sm-6 col-xm-4 mx-auto" id="main-card">
                 <div class="row">
-                    <div class="col-md-5 border-none" id="profile-card">
+                    <div class="col-md-5" id="profile-card">
                         <div class="background-gif ">
-                            <div class="card-header">
+                            <div class="header">
                                 <div class="gif">
-                                   <img src="IMAGES/giphy_1.gif" alt="programme-gif"> 
+                                    <img src="IMAGES/giphy_1.gif" alt="programme-gif">
                                 </div>
                                 <div class="image">
                                     <img src="./IMAGES/image.png" alt="">
                                 </div>
                             </div>
-                            
-                            
+
+
+                        </div>
+                        <div class="name">
+                            <h3 class="my-name">Reuben Kipkemboi</h3>
+                            <p class="my-description">I am a <span class="description"> </span></p>
                         </div>
 
 
@@ -87,7 +91,20 @@
         <!-- MDB -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js">
         </script>
+        <!-- typed.js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed = new Typed(".description", {
+                    strings: [, "Full Stack software Engineer...", "UI/UX Enthusiast...", "wed developer creating for the web..."],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    loop: true
+
+                })
+        </script>
+        <!-- typed.js cdn ends here -->
         <script src="./JS/jquery-3.6.0.js"></script>
+
         <script src="./JS/main.js"></script>
     </div>
 </body>

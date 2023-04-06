@@ -18,10 +18,7 @@
 
 #main-container {
     height: 100vh;
-    /* background-color: #0A192F; */
     background-color: #1d1d1d;
-
-
 }
 
 #small-container {
@@ -65,14 +62,12 @@
 }
 
 .nav-span {
-    /* color:#4DC4AE; */
     color: #a4ff91;
     margin-right: 2px;
 
 }
 
 .nav-item>.nav-link:hover {
-    /* color:#4DC4AE; */
     color: #a4ff91;
     margin-right: 2px;
 
@@ -92,47 +87,35 @@
 
 #resume-btn:hover {
     background-position: left;
-    color: #0A192F;
+    color: #1d252c;
 
 }
 
 #main-card {
     background-color: transparent;
-    border: 0.2px solid #a4ff91;
     background-color: #1d252c;
-    border: none;
-
-}
-
-.profile-header {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 1.3vh;
-    padding: 2%;
-    border: none;
 
 }
 
 #profile-card {
     height: 70vh;
-    border: none;
+
 }
 
 .background-gif {
     position: relative;
   }
   
-  .card-header {
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     height: 100%;
   }
   
   .gif {
     position: relative;
-    border-radius: 0% 0% 32% 28% / 10% 10% 40% 32%;
+    /* border-radius: 0% 0% 32% 28% / 10% 10% 40% 32%; */
     overflow: hidden;
   }
   
@@ -143,12 +126,13 @@
     transform: translateX(-50%);
     height: 200px;
     width: 200px;
-    background-repeat: no-repeat;
-    /* box-shadow: -8px 0 4px #a4ff91; */
     /* background-color: #1d252c; */
+    background-color: #003140;
+    /* box-shadow: -10px 0 10px rgb(164, 255, 145); */
   } 
 .image>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
 }
