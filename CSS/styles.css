@@ -94,28 +94,29 @@
 }
 
 #profile-card {
-    height: 70vh;
+    height: 60vh;
+    position: relative;
 
 }
 
 .background-gif {
     position: relative;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-  }
-  
-  .gif {
+}
+
+.gif {
     position: relative;
     /* border-radius: 0% 0% 32% 28% / 10% 10% 40% 32%; */
     overflow: hidden;
-  }
-  
-  .image {
+}
+
+.image {
     position: absolute;
     bottom: -20%;
     left: 50%;
@@ -125,37 +126,86 @@
     /* background-color: #1d252c; */
     background-color: #003140;
     /* box-shadow: -10px 0 10px rgb(164, 255, 145); */
-  } 
+}
+
 .image>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    
+
 }
-.my-name{
+
+.my-name {
     font-size: 3vh;
     color: #ffffff;
     text-align: center;
     padding-top: 5%;
     font-family: 'Inter', sans-serif;
 }
-.my-description{
+
+.my-description {
     color: #a4ff91;
     font-size: 2vh;
     text-align: center;
 }
-.name{
+
+.name {
     margin-top: 12%;
 }
-.social-icons{
+
+.social-icons {
     text-align: center;
     font-size: 2vh;
 
 }
-.social-icons>a{
+
+.social-icons>a {
     color: #ffffff;
     margin-left: 10px;
 }
-.social-icons>a:hover{
+
+.social-icons>a:hover {
     color: #a4ff91;
+}
+.fading-line{
+  height: 3px;
+  border: 0;
+  background: linear-gradient(to right, transparent, #a4ff91, transparent);
+
+}
+.easy-buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    margin-left: 4%;
+    padding-left:1%;
+    text-align: center;
+}
+
+.cv,
+.contact {
+    font-size: 1.8vh;
+    margin-left: 4%;
+
+}
+
+.cv>a,
+.contact>a {
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.cv>a:hover,
+.contact>a:hover {
+    color: #a4ff91;
+
+
+}
+
+.cv {
+    border-right: 0.5px solid #a4ff91;
+
+
 }
