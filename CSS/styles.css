@@ -2,11 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Chakra Petch', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lekton', sans-serif;
     /* font-family: 'Fira Code', monospace; */
@@ -14,13 +17,12 @@
 
 #main-container {
     height: 100vh;
-    background-color: #1d1d1d;
+    background-color: #0a192f
 }
 
 #small-container {
     height: 80vh;
 }
-
 
 /* header || nav-bar */
 
@@ -37,7 +39,7 @@
 .navbar-scroll .nav-link,
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
-    color: #a4ff91;
+    color: #64ffda;
 }
 
 .navbar-scroll .nav-link,
@@ -58,13 +60,13 @@
 }
 
 .nav-span {
-    color: #a4ff91;
+    color: #64ffda;
     margin-right: 2px;
 
 }
 
 .nav-item>.nav-link:hover {
-    color: #a4ff91;
+    color: #64ffda;
     margin-right: 2px;
 
 }
@@ -72,25 +74,23 @@
 #resume-btn {
     font-weight: 700;
     background-color: transparent;
-    outline: 0.5px solid #a4ff91;
+    outline: 0.5px solid #64ffda;
     border-radius: 4px;
     color: #ffffff;
-    background: linear-gradient(to left, #1d1d1d 50%, #a4ff91 50%) right;
+    background: linear-gradient(to left, #0a192f 50%, #64ffda 50%) right;
     background-size: 200%;
     transition: .4s ease-out;
-
 }
 
 #resume-btn:hover {
     background-position: left;
-    color: #1d252c;
+    color: #0a192f;
 
 }
 
 #main-card {
     background-color: transparent;
-    background-color: #1d252c;
-
+    box-shadow: -10px 0 10px rgb(164, 255, 145);
 }
 
 #profile-card {
@@ -113,7 +113,10 @@
 .gif {
     position: relative;
     /* border-radius: 0% 0% 32% 28% / 10% 10% 40% 32%; */
-    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 50%;
 }
 
 .image {
@@ -123,9 +126,8 @@
     transform: translateX(-50%);
     height: 200px;
     width: 200px;
-    /* background-color: #1d252c; */
-    background-color: #003140;
-    /* box-shadow: -10px 0 10px rgb(164, 255, 145); */
+    background-color: #1d252c;
+    box-shadow: -10px 0 10px rgb(164, 255, 145);
 }
 
 .image>img {
@@ -177,7 +179,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 10px;
+    padding: 3%;
     margin-left: 4%;
     padding-left:1%;
     text-align: center;
@@ -207,5 +209,49 @@
 .cv {
     border-right: 0.5px solid #a4ff91;
 
+
+}
+
+/* Section1 */
+.card-1{
+    padding-top: 18%;
+}
+.card-1>.small{
+    color: #64ffda;
+    font-size: 25px;
+}
+.name{
+    font-family: 'Inter', sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    margin-top:-1%;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.software-engineer{
+    font-size: 60px;
+    color: #ccd6f6;
+    font-family: 'Inter', sans-serif;
+    color: #64ffda;
+    font-weight: bold;
+
+}
+#card-one-main{
+    height: 100vh;
+}
+.small-description{
+    color:#8892B0;
+    font-size:20px;
+    line-height: 26px;
+    font-family: 'Inter', sans-serif;
+}
+.github{
+    color: #64ffda;
+    
+}
+.github:hover{
+    color: #64ffda;
+    text-decoration: underline;
+    
 
 }
