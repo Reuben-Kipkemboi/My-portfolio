@@ -40,6 +40,9 @@
 .navbar-scroll .navbar-toggler-icon,
 .navbar-scroll .navbar-brand {
     color: #64ffda;
+    font-size: 17px;
+    line-height: 13.9px;
+    font-weight: 400;
 }
 
 .navbar-scroll .nav-link,
@@ -48,11 +51,8 @@
     color: #ffffff;
 }
 
-/* An optional height of the navbar AFTER scroll */
-.navbar.navbar-scroll.navbar-scrolled {
-    padding-top: auto;
-    padding-bottom: auto;
-}
+
+
 
 .navbar-brand {
     font-size: unset;
@@ -65,6 +65,12 @@
 
 }
 
+nav{
+    padding-top:1.5% !important;
+    box-shadow: none !important;
+    padding-right: 1%;
+}
+
 .nav-item>.nav-link:hover {
     color: #64ffda;
     margin-right: 2px;
@@ -72,7 +78,9 @@
 }
 
 #resume-btn {
-    font-weight: 700;
+    font-size: 16px;
+    line-height: 13.9px;
+    font-weight: 400;
     background-color: transparent;
     outline: 0.5px solid #64ffda;
     border-radius: 4px;
