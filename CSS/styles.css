@@ -16,7 +16,7 @@
 }
 
 #main-container {
-    height: 100vh;
+    height: 200vh;
     background-color: #0a192f
 }
 
@@ -225,7 +225,7 @@ video {
 
 /* Section1 */
 .card-1 {
-    padding-top: 18%;
+    padding-top: 20%;
 }
 
 .card-1>.small {
@@ -257,8 +257,8 @@ video {
 
 .small-description {
     color: #8892B0;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 1.5;
     font-family: 'Inter', sans-serif;
 }
 
@@ -273,7 +273,7 @@ video {
 }
 
 .checkout-btn {
-    background-color:transparent;
+    background-color: transparent;
     padding: 2%;
     outline: 0.1px solid #64ffda;
     font-size: 20px;
@@ -289,11 +289,60 @@ video {
     transition: .4s ease-out;
     text-align: center;
 }
-.checkout-btn:hover{
+
+.checkout-btn:hover {
     background-position: left;
     color: #0a192f;
     outline: 0.1px solid #ffffff;
+
+}
+
+/* About section styling */
+.card-2 {
+    margin-top: 35%;
+
+}
+
+.number {
+    color: #64ffda;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.about-heading {
+
+    font-size: 32px;
+    line-height: 35.2px;
+    margin: 10px 0px 40px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #ccd6f6;
     
+}
 
+.line-under {
+    height: 3px;
+    border: 0;
+    background: linear-gradient(to right, transparent, #64ffda, transparent);
 
+}
+.about-content{
+    color: #8892B0;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin:40px 0px 30px;
+
+}
+.moringa-school{
+    color: #64ffda;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+
+}
+.moringa-school:hover{
+    color: #64ffda;
+    text-decoration: underline;
 }
