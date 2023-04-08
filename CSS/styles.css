@@ -230,15 +230,15 @@ video {
 
 .name {
     font-family: 'Calibre', sans-serif;
-    font-size: 80px;
+    font-size: 85px;
     color: #ffffff;
     margin-top: -1%;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 1.1;
 }
 
 .software-engineer {
-    margin-top: -3%;
+    margin-top: -3.5%;
     font-size: 60px;
     color: #ccd6f6;
     font-family: 'Calibre', sans-serif;
@@ -368,4 +368,5 @@ video {
   }
 .typing{
     font-family: 'Calibre', sans-serif;
+    font-weight: 500;
 }
