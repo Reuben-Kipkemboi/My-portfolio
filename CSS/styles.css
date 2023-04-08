@@ -1,18 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calibre');
 
-@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Lekton', sans-serif;
-    /* font-family: 'Fira Code', monospace; */
+    font-family: 'SF Mono', sans-serif;
 }
 
 #main-container {
@@ -147,7 +141,7 @@ video {
 }
 
 .my-name {
-    font-size: 3vh;
+    font-size: 80px;
     color: #ffffff;
     text-align: center;
     padding-top: 5%;
@@ -156,7 +150,8 @@ video {
 
 .my-description {
     color: #a4ff91;
-    font-size: 2vh;
+    font-size: 2vh
+    ;
     text-align: center;
 }
 
@@ -234,7 +229,7 @@ video {
 }
 
 .name {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
     font-size: 80px;
     color: #ffffff;
     margin-top: -1%;
@@ -243,9 +238,10 @@ video {
 }
 
 .software-engineer {
+    margin-top: -3%;
     font-size: 60px;
     color: #ccd6f6;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
     color: #64ffda;
     font-weight: bold;
 
@@ -259,11 +255,12 @@ video {
     color: #8892B0;
     font-size: 22px;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
 }
 
 .github {
     color: #64ffda;
+    font-family: 'Calibre', sans-serif;
 
 }
 
@@ -315,7 +312,7 @@ video {
     line-height: 35.2px;
     margin: 10px 0px 40px;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
     color: #ccd6f6;
     
 }
@@ -337,7 +334,7 @@ video {
 }
 .moringa-school{
     color: #64ffda;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
     font-size: 22px;
     line-height: 26px;
 
@@ -365,4 +362,10 @@ video {
 }
 #about-myself{
     margin-left: 5%;
+}
+.smooth-scroll {
+    scroll-behavior: smooth;
+  }
+.typing{
+    font-family: 'Calibre', sans-serif;
 }
