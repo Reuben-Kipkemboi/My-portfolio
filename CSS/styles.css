@@ -346,3 +346,23 @@ video {
     color: #64ffda;
     text-decoration: underline;
 }
+.tech{
+    color: #ccd6f6;
+    list-style: none;
+    padding-left: 0;
+}
+.tech-lists{
+    font-size: 15px;
+    padding:3px;
+}
+.fa-code-commit{
+    font-size: 13px;
+    margin-right: 1%;
+    color: #64ffda;
+}
+#lists{
+    margin-top: -3%;
+}
+#about-myself{
+    margin-left: 5%;
+}
