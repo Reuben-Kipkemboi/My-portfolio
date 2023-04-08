@@ -325,9 +325,9 @@ video {
 }
 .about-content{
     color: #8892B0;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calibre', sans-serif;
     font-weight: 400;
     margin:40px 0px 30px;
 
@@ -369,4 +369,12 @@ video {
 .typing{
     font-family: 'Calibre', sans-serif;
     font-weight: 500;
+}
+.empty{
+    height: 40vh;
+}
+/* card-3 styling */
+#work-experience{
+    margin-left: 10%;
+    
 }
