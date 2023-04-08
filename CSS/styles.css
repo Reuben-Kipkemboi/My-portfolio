@@ -10,13 +10,9 @@
 }
 
 #main-container {
-    height: 200vh;
     background-color: #0a192f
 }
 
-#small-container {
-    height: 80vh;
-}
 
 /* header || nav-bar */
 
@@ -248,7 +244,7 @@ video {
 }
 
 #card-one-main {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .small-description {
@@ -375,6 +371,44 @@ video {
 }
 /* card-3 styling */
 #work-experience{
-    margin-left: 10%;
+    margin-left: 12%;
     
+}
+.tech-lists-2{
+    list-style: none;
+    color: #8892B0;
+    font-family: 'Calibre', sans-serif;
+    line-height: 1.5;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.line-under-2{
+    margin-bottom:6%;
+    height: 3px;
+    border: 0;
+    background: linear-gradient(to right, transparent, #64ffda, transparent);
+}
+#experience-items{
+    color: #64ffda;
+}
+.icta{
+    color: #64ffda;
+    font-family: 'Calibre', sans-serif;
+
+}
+.icta:hover{
+    color: #64ffda;
+
+}
+#place{
+    color: #64ffda;
+    font-size: 20px;
+}
+.experience{
+    color: #ffffff;
+    font-family: 'Calibre', sans-serif;
+}
+.tech-lists-2>.numbering-2{
+    color: #64ffda;
 }
