@@ -10,9 +10,8 @@
 }
 
 #main-container {
-    background-color: #0a192f
+    background-color: #0a192f;
 }
-
 
 /* header || nav-bar */
 
@@ -59,6 +58,8 @@ nav {
     padding-top: 1.5% !important;
     box-shadow: none !important;
     padding-right: 1%;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-item>.nav-link:hover {
@@ -146,8 +147,7 @@ video {
 
 .my-description {
     color: #a4ff91;
-    font-size: 2vh
-    ;
+    font-size: 2vh;
     text-align: center;
 }
 
@@ -246,6 +246,10 @@ video {
 #card-one-main {
     /* height: 100vh; */
 }
+#hero-image{
+    margin-top: -40%;
+
+}
 
 .small-description {
     color: #8892B0;
@@ -310,7 +314,7 @@ video {
     font-weight: 600;
     font-family: 'Calibre', sans-serif;
     color: #ccd6f6;
-    
+
 }
 
 .line-under {
@@ -319,62 +323,75 @@ video {
     background: linear-gradient(to right, transparent, #64ffda, transparent);
 
 }
-.about-content{
+
+.about-content {
     color: #8892B0;
     font-size: 22px;
     line-height: 1.5;
     font-family: 'Calibre', sans-serif;
     font-weight: 400;
-    margin:40px 0px 30px;
+    margin: 40px 0px 30px;
 
 }
-.moringa-school{
+
+.moringa-school {
     color: #64ffda;
     font-family: 'Calibre', sans-serif;
     font-size: 22px;
     line-height: 26px;
 
 }
-.moringa-school:hover{
+
+.moringa-school:hover {
     color: #64ffda;
     text-decoration: underline;
 }
-.tech{
+
+.tech {
     color: #ccd6f6;
     list-style: none;
     padding-left: 0;
 }
-.tech-lists{
+
+.tech-lists {
     font-size: 15px;
-    padding:3px;
+    padding: 3px;
 }
-.fa-code-commit{
+
+.fa-code-commit {
     font-size: 13px;
     margin-right: 1%;
     color: #64ffda;
 }
-#lists{
+
+#lists {
     margin-top: -3%;
 }
-#about-myself{
+
+#about-myself {
     margin-left: 5%;
 }
+
 .smooth-scroll {
     scroll-behavior: smooth;
-  }
-.typing{
+}
+
+.typing {
     font-family: 'Calibre', sans-serif;
     font-weight: 500;
 }
-.empty{
+
+.empty {
     height: 40vh;
 }
+
 /* card-3 styling */
-#work-experience{
+#work-experience {
     margin-left: 12%;
-    
+
 }
-.tech-lists-2{
+
+.tech-lists-2 {
     list-style: none;
     color: #8892B0;
     font-family: 'Calibre', sans-serif;
@@ -383,32 +400,39 @@ video {
     font-weight: 400;
 
 }
-.line-under-2{
-    margin-bottom:6%;
+
+.line-under-2 {
+    margin-bottom: 6%;
     height: 3px;
     border: 0;
     background: linear-gradient(to right, transparent, #64ffda, transparent);
 }
-#experience-items{
+
+#experience-items {
     color: #64ffda;
 }
-.icta{
+
+.icta {
     color: #64ffda;
     font-family: 'Calibre', sans-serif;
 
 }
-.icta:hover{
+
+.icta:hover {
     color: #64ffda;
 
 }
-#place{
+
+#place {
     color: #64ffda;
     font-size: 20px;
 }
-.experience{
+
+.experience {
     color: #ffffff;
     font-family: 'Calibre', sans-serif;
 }
-.tech-lists-2>.numbering-2{
+
+.tech-lists-2>.numbering-2 {
     color: #64ffda;
 }
