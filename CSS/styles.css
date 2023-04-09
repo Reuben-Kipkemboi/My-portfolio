@@ -450,7 +450,7 @@ video {
     margin-bottom: 3%;
 
 }
-#project-one{
+#project-one, #project-two{
     margin-bottom: 3%;
     height: 40vh;
 }
@@ -458,6 +458,19 @@ video {
     width: 100%;
     object-fit: cover;
     border: 0.1px solid transparent;
-    border-image: linear-gradient(to left, #64ffda, rgba(255,255,255,0)) 30;
     border-radius: 4px;
+}
+.project-title{
+    color: #64ffda;
+    text-align: end;
+}
+.project-name{
+    color: #8892B0;
+    font-family: 'Calibre', sans-serif;
+    font-size: 3.0vh;
+    font-weight: 600;
+    text-align: end;
+}
+.explanation{
+    
 }
