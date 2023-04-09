@@ -436,6 +436,17 @@ video {
 .tech-lists-2>.numbering-2 {
     color: #64ffda;
 }
+/* section3 */
 #Projects{
-    
+
+}
+.card-3{
+    margin-bottom: 30%
+}
+.line-under-3 {
+    height: 3px;
+    border: 0;
+    background: linear-gradient(to right, transparent, #64ffda, transparent);
+    margin-bottom: 2%;
+
 }
