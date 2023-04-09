@@ -447,6 +447,17 @@ video {
     height: 3px;
     border: 0;
     background: linear-gradient(to right, transparent, #64ffda, transparent);
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 
+}
+#project-one{
+    margin-bottom: 3%;
+    height: 40vh;
+}
+.projects-show{
+    width: 100%;
+    object-fit: cover;
+    border: 0.1px solid transparent;
+    border-image: linear-gradient(to left, #64ffda, rgba(255,255,255,0)) 30;
+    border-radius: 4px;
 }
