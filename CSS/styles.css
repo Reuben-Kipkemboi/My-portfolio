@@ -520,6 +520,66 @@ video {
 
 
 }
+
+/* project 2 styling */
+.project-title-2{
+    color: #64ffda;
+    text-align: start;
+}
+.project-name-2{
+    color: #8892B0;
+    font-family: 'Calibre', sans-serif;
+    font-size: 3.0vh;
+    font-weight: 600;
+    text-align: start;
+}
+.explanation-2{
+    color: #A8B2D1;
+    font-size: 2vh;
+    font-weight: 400;
+}
+.explanation-2>.child{
+    font-family: 'Calibre',sans-serif;
+    line-height: 1.0;
+    margin-top: 13px;
+    background-color: #112240;
+    padding: 1.5%;
+    border-radius: 5px;
+    position:absolute;
+    width: 28%;
+    z-index: 2;
+    
+}
+.tech-stacks-2{
+    margin-top: 42%;
+    text-align: start;
+
+    
+}
+.tech-stack-2{
+    color: #A8B2D1;
+    font-weight: 400;
+    margin-left: 6px;
+    
+    
+}
+.project-links-2{
+    color: #ffffff;
+    text-align: start;
+    font-size: 2vh;
+
+
+}
+.project-links-2>span>i{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.project-links-2>span>i:hover{
+    
+    color: #64ffda;
+
+
+}
   
 
 
