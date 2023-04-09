@@ -502,5 +502,23 @@ video {
     
     
 }
+.project-links{
+    color: #ffffff;
+    text-align: end;
+    font-size: 2vh;
+
+
+}
+.project-links>span>i{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+.project-links>span>i:hover{
+    
+    color: #64ffda;
+
+
+}
+  
 
 
