@@ -442,7 +442,7 @@ video {
 
 }
 .card-3{
-    margin-bottom: 30%
+    margin-bottom: 13%
 }
 .line-under-3 {
     height: 3px;
@@ -609,4 +609,43 @@ video {
     text-align: end;
 }
 
+/* contact-section styling */
+.about-heading-4{
+    color:#64ffda;
+    font-size: 1.9vh;
+    font-weight: 400;
+
+}
+.about-heading-4 .number-4{
+    text-align: center;
+    color: #64ffda;
+
+}
+.contact-me{
+    color: #A8B2D1;
+    font-size: 5vh;
+    font-family: 'Calibre',sans-serif;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#bottom{
+    padding-top: 5%;
+}
+.contact-description{
+    color:#8892B0;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Calibre',sans-serif;
+}
+
+.get-in-touch-btn{
+    color: #64ffda;
+    font-size: 2vh;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: 0.5px solid #64ffda;
+    border: none;
+}
 
