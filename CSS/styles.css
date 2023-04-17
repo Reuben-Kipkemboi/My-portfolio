@@ -633,10 +633,11 @@ video {
     padding-top: 5%;
 }
 .contact-description{
-    color:#8892B0;
+    color: #A8B2D1;
     font-size: 25px;
     font-weight: 400;
     font-family: 'Calibre',sans-serif;
+    margin-bottom: 4%;
 }
 
 .get-in-touch-btn{
@@ -647,5 +648,12 @@ video {
     background-color: transparent;
     outline: 0.5px solid #64ffda;
     border: none;
+}
+footer{
+    text-align: center;
+    margin-top: 10%;
+    color: #A8B2D1;
+    font-weight: 500;
+    font-size: 20px;
 }
 
