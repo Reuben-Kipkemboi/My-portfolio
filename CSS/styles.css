@@ -629,9 +629,7 @@ video {
     text-transform: uppercase;
     font-weight: 600;
 }
-#bottom{
-    padding-top: 5%;
-}
+
 .contact-description{
     color: #A8B2D1;
     font-size: 25px;
@@ -656,4 +654,11 @@ footer{
     font-weight: 500;
     font-size: 20px;
 }
+#left-description{
+    margin-left: 5%;
+    padding-top: 8%;
+}
+#rotating-world{
+    height: 45vh;
 
+}
