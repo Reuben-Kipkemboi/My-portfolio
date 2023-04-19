@@ -253,7 +253,8 @@ video {
 }
 
 .small-description {
-    color: #8892B0;
+    /* color: #8892B0; */
+    color: #A8B2D1;
     font-size: 22px;
     line-height: 1.5;
     font-family: 'Calibre', sans-serif;
@@ -662,3 +663,4 @@ footer{
     height: 50vh;
 
 }
+
