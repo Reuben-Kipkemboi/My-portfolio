@@ -506,19 +506,18 @@ video {
     
     
 }
-.project-links{
+.project-links a{
     color: #ffffff;
-    text-align: end;
+    float: right;
     font-size: 2vh;
 
 
 }
-.project-links>span>i{
-    margin-left: 15px;
+.project-links>a>span>i{
+    margin-left: 20px;
     margin-top: 25px;
 }
-.project-links>span>i:hover{
-    
+.project-links>a>span>i:hover{
     color: #64ffda;
 
 
@@ -566,18 +565,18 @@ video {
     
     
 }
-.project-links-2{
+.project-links-2>a{
     color: #ffffff;
     text-align: start;
     font-size: 2vh;
 
 
 }
-.project-links-2>span>i{
+.project-links-2>a>span>i{
     margin-left: 15px;
     margin-top: 25px;
 }
-.project-links-2>span>i:hover{
+.project-links-2>a:hover{
     
     color: #64ffda;
 }
