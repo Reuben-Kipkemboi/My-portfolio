@@ -12,6 +12,7 @@
 
 #main-container {
     background-color: #0a192f;
+    
 }
 
 /* header || nav-bar */
@@ -217,6 +218,18 @@ video {
 /* Section1 */
 .card-1 {
     padding-top: 20%;
+    
+}
+.hero-card{
+    padding-top: 18%;
+    margin-left:-22%;    
+}
+#profile-card-id{
+    background-color: #112240;
+    border: 10px solid #0a192f;
+    /* border-radius: 100% 14% 44% 52% / 38% 34% 53% 37% ; */
+    border-radius: 50%;
+
 }
 
 .card-1>.small {
@@ -243,9 +256,9 @@ video {
 
 }
 
-#card-one-main {
-    /* height: 100vh; */
-}
+/* #card-one-main {
+    /* height: 100vh; 
+} */
 #hero-image{
     margin-top: -40%;
 
@@ -297,7 +310,7 @@ video {
 
 /* About section styling */
 .card-2 {
-    margin-top: 35%;
+    margin-top: 28%;
 
 }
 
@@ -383,7 +396,7 @@ video {
 }
 
 .empty {
-    height: 40vh;
+    height: 30vh;
 }
 
 /* card-3 styling */
@@ -438,8 +451,19 @@ video {
     color: #64ffda;
 }
 /* section3 */
-#Projects{
+/* #Projects{
 
+} */
+.corner-colours{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-color: #112240;
+    position: sticky;
+    top: 30%;
+    right: 2%;
+
+    
 }
 .card-3{
     margin-bottom: 13%
@@ -695,3 +719,4 @@ footer{
     border: 0;
     background: linear-gradient(to right, transparent, #64ffda, transparent);
   }
+
