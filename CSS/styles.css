@@ -365,7 +365,7 @@ video {
 .tech {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
     
     
 }
@@ -379,6 +379,7 @@ video {
 .devicon-angularjs-plain, .devicon-django-plain,
 .devicon-bootstrap-plain, .devicon-figma-plain, .devicon-flask-original, .devicon-git-plain, .devicon-html5-plain, .devicon-javascript-plain, .devicon-markdown-original, .devicon-postgresql-plain, .devicon-python-plain, .devicon-typescript-plain, .devicon-visualstudio-plain{
     font-size: 8vh;
+    color: #ffffff;
     
 }
 
