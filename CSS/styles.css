@@ -345,7 +345,6 @@ video {
     font-family: 'Calibre', sans-serif;
     font-weight: 400;
     margin: 40px 0px 30px;
-
 }
 
 .moringa-school {
@@ -359,19 +358,34 @@ video {
 .moringa-school:hover {
     color: #64ffda;
     text-decoration: underline;
+
 }
 
+
 .tech {
-    color: #ccd6f6;
-    list-style: none;
-    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    
+    
 }
-.tech>.devicon-angularjs-plain, .tech>.devicon-django-plain,
-.tech>.devicon-bootstrap-plain, .devicon-figma-plain, .devicon-flask-original, .devicon-git-plain, .devicon-html5-plain, .devicon-javascript-plain, .devicon-markdown-original, .devicon-postgresql-plain, .devicon-python-plain, .devicon-typescript-plain, .devicon-visualstudio-plain{
-    font-size: 6vh;
-    margin-left: 3%;
-    margin-bottom: 3%;
+.animate__fadeIn{
+    text-align: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    margin-bottom: 20px
+}
+
+.devicon-angularjs-plain, .devicon-django-plain,
+.devicon-bootstrap-plain, .devicon-figma-plain, .devicon-flask-original, .devicon-git-plain, .devicon-html5-plain, .devicon-javascript-plain, .devicon-markdown-original, .devicon-postgresql-plain, .devicon-python-plain, .devicon-typescript-plain, .devicon-visualstudio-plain{
+    font-size: 8vh;
+    
+}
+
+.animate__fadeIn>p{
+    font-size: 15px;
+    color: #fff;
+
 }
 
 .tech-lists {
