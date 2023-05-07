@@ -539,6 +539,19 @@ video {
     z-index: 2;
     
 }
+.okoa-child{
+    font-family: 'Calibre',sans-serif;
+    line-height: 1.0;
+    margin-top: 13px;
+    margin-left: 5%;
+    background-color: #112240;
+    padding: 1.5%;
+    border-radius: 5px;
+    position:absolute;
+    width: 28%;
+    z-index: 2;
+
+}
 .tech-stacks{
     margin-top: 39%;
     text-align: end;
