@@ -239,7 +239,7 @@ video {
 
 .name {
     font-family: 'Calibre', sans-serif;
-    font-size: 85px;
+    font-size: 11vh;
     color: #ffffff;
     margin-top: -1%;
     font-weight: 550;
@@ -738,7 +738,6 @@ footer{
     position: fixed;
     bottom: 30%;
     right: 0;
-    border-bottom:0.5 px solid #64ffda;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);    
@@ -748,7 +747,6 @@ footer{
     letter-spacing: 2px;
     color: #fff;
     line-height: 24px;
-    
 }
 
   .line-under-vr{
