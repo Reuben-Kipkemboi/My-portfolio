@@ -138,22 +138,15 @@ video {
 
 }
 
-.my-name {
-    font-size: 80px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 5%;
-    font-family: 'Inter', sans-serif;
-}
-
 .my-description {
     color: #a4ff91;
     font-size: 2vh;
     text-align: center;
 }
 
-.name {
+.card-1>.name {
     margin-top: 12%;
+    font-size: 10vh;
 }
 
 .social-icons {
@@ -222,22 +215,24 @@ video {
 }
 .hero-card{
     padding-top: 18%;
-    margin-left:-22%;    
+    margin-left: -28%;   
+    
 }
 #profile-card-id{
-    background-color: #112240;
+    /* background-color: #112240; */
     border: 10px solid #0a192f;
-    /* border-radius: 100% 14% 44% 52% / 38% 34% 53% 37% ; */
     border-radius: 50%;
+    height: 50vh; 
+    width: 100%;
 
 }
 
 .card-1>.small {
     color: #64ffda;
-    font-size: 25px;
+    font-size: 2.5vh;
 }
 
-.name {
+.card-1>.name {
     font-family: 'Calibre', sans-serif;
     font-size: 11vh;
     color: #ffffff;
@@ -499,7 +494,7 @@ video {
 
 }
 #project-one, #project-two{
-    margin-bottom: 7%;
+    margin-bottom: 10%;
     height: 40vh;
 
 }
@@ -588,6 +583,7 @@ video {
     font-weight: 400;
 }
 .explanation-2>.child{
+    margin-left: 12%;
     font-family: 'Calibre',sans-serif;
     line-height: 1.0;
     margin-top: 13px;
@@ -631,7 +627,8 @@ video {
         background-color: transparent;
         padding: 2%;
         outline: 0.1px solid #64ffda;
-        font-size: 20px;
+        font-size: 2.2vh;
+        font-weight: 500;
         line-height: 14px;
         word-spacing: 0px;
         margin: 50px 0px 0px;
@@ -643,7 +640,7 @@ video {
         background-size: 200%;
         transition: .4s ease-out;
         text-align: center;
-        margin-bottom: 3%;
+       
 }
 .noteworthy-projects:hover {
     background-position: left;
@@ -678,27 +675,27 @@ video {
 
 .contact-description{
     color: #A8B2D1;
-    font-size: 25px;
+    font-size: 2.5vh;
     font-weight: 400;
     font-family: 'Calibre',sans-serif;
     margin-bottom: 4%;
 }
 
 .get-in-touch-btn{
+    font-family: 'Calibre',sans-serif;
     color: #64ffda;
-    font-size: 2vh;
-    padding: 10px;
+    font-size: 2.5vh;
+    padding: 2%;
     border-radius: 5px;
     background-color: transparent;
     outline: 0.5px solid #64ffda;
-    border: none;
 }
 footer{
     text-align: center;
     margin-top: 10%;
     color: #A8B2D1;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 2vh;
 }
 #left-description{
     margin-left: 5%;
