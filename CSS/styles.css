@@ -774,4 +774,6 @@ footer{
     border: 0;
     background: linear-gradient(to right, transparent, #64ffda, transparent);
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
