@@ -218,6 +218,10 @@ video {
     margin-left: -28%;   
     
 }
+.fa-plus{
+    color: #64ffda;
+    font-size: 1.8vh;
+}
 #profile-card-id{
     /* background-color: #112240; */
     border: 10px solid #0a192f;
@@ -336,11 +340,11 @@ video {
 
 .about-content {
     color: #8892B0;
-    font-size: 22px;
+    font-size: 2.8vh;
     line-height: 1.5;
     font-family: 'Calibre', sans-serif;
     font-weight: 400;
-    margin: 40px 0px 30px;
+    margin: 5vh 0px 3.75vh;
 }
 
 .moringa-school {
