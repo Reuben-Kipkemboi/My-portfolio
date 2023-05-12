@@ -40,5 +40,6 @@ $('a[href*="#"]')
             $target.focus(); // Set focus again
           };
         });
-      }
     }
+}
+});
