@@ -842,6 +842,15 @@ footer{
     margin: 0;
     padding: 0;
 }
+.explanation>.child{
+    width: 85%;
+    margin:0;
+    
+
+}
+.tech-stacks{
+    font-size: 2vh;
+}
 
 
 }
