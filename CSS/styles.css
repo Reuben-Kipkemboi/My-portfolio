@@ -815,5 +815,34 @@ footer{
 #work-experience>.about-heading>.number{
     font-size: 2.5vh;
 }
+.experience, .tech-lists-2{
+    font-size: 2.5vh;
+}
+#Projects>.about-heading>.number{
+    font-size: 2.5vh;
+}
+.projects-show{
+    width:100%;
+    margin-top: 2%;
+}
+#project-one{
+    margin-bottom: 0;
+    height: 26vh;
+}
+
+#project-one > .col-md-7 {
+    padding-top:0;
+    height: 0;
+}
+#project-one> .col-md-5> .project-title{
+    margin: 0;
+    padding: 0;
+}
+#project-one> .col-md-5> .project-name{
+    margin: 0;
+    padding: 0;
+}
+
+
 }
 
