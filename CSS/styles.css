@@ -773,6 +773,11 @@ footer{
   html {
     scroll-behavior: smooth;
   }
+  .my-email{
+    color: #64ffda;
+
+
+  }
 
 /* Media queries */
 /* Extra small devices (phones, 600px and down) */
@@ -874,6 +879,17 @@ footer{
 }
 .contact-me{
     font-size: 3vh;
+}
+#left-description{
+    margin-left: 0;
+    padding-top: 7%;
+}
+.icon-bar{
+    display: none;
+
+}
+aside{
+    display: none;
 }
 
 
