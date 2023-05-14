@@ -775,8 +775,12 @@ footer{
   }
   .my-email{
     color: #64ffda;
-
-
+    border: 0.8px solid #112240;
+    text-align: center;
+    padding: 2%;
+  }
+  .my-email:hover{
+    border-bottom: 1px solid #64ffda;
   }
 
 /* Media queries */
@@ -891,6 +895,11 @@ footer{
 aside{
     display: none;
 }
+
+.my-email{
+    font-size: 2vh;
+    
+  }
 
 
 }
