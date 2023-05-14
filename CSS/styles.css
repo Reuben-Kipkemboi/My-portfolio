@@ -868,7 +868,13 @@ footer{
     padding: 3%;
 
 }
+#rotating-world{
+    height: 30vh
 
+}
+.contact-me{
+    font-size: 3vh;
+}
 
 
 }
