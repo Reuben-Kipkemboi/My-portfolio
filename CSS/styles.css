@@ -147,10 +147,10 @@ video {
     text-align: center;
 }
 
-.card-1>.name {
+/* .card-1>.name {
     margin-top: 12%;
     font-size: 10vh;
-}
+} */
 
 .social-icons {
     text-align: center;
@@ -250,7 +250,7 @@ video {
 
 .software-engineer {
     margin-top: -3.5%;
-    font-size: 60px;
+    font-size: 7.5vh;
     color: #ccd6f6;
     font-family: 'Calibre', sans-serif;
     color: #64ffda;
@@ -775,3 +775,45 @@ footer{
   html {
     scroll-behavior: smooth;
   }
+
+/* Media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+.card-1>.name {
+    font-size: 9vh;
+}
+
+.software-engineer {
+    font-size: 4vh;
+}
+.small-description{
+    font-size: 2.5vh;
+}
+
+.checkout-btn {
+    font-size: 1.8vh;
+    padding: 10px;
+    margin-top: -1%;
+
+}
+.about-heading{
+    font-size: 3vh;
+}
+#about-myself>.about-heading>.number{
+    font-size:2.5vh
+}
+#about-myself>.about-heading{
+    font-size: 3vh
+}
+.about-content{
+    font-size: 2.5vh;
+}
+#work-experience{
+    margin-top: -60%;
+}
+#work-experience>.about-heading>.number{
+    font-size: 2.5vh;
+}
+}
+
