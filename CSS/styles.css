@@ -705,10 +705,9 @@ video {
     font-family: 'Calibre',sans-serif;
     color: #64ffda;
     font-size: 2.5vh;
-    padding: 2%;
     border-radius: 5px;
     background-color: transparent;
-    outline: 0.5px solid #64ffda;
+    
 }
 footer{
     text-align: center;
@@ -725,7 +724,6 @@ footer{
     height: 50vh;
 
 }
-
 
 
 .icon-bar {
