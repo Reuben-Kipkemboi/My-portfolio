@@ -557,15 +557,13 @@ video {
 }
 .tech-stacks{
     margin-top: 39%;
-    text-align: end;
+    text-align: end; 
 
-    
 }
 .tech-stack{
     color: #A8B2D1;
     font-weight: 400;
     margin-left: 6px;
-    
     
 }
 .project-links a{
@@ -843,14 +841,30 @@ footer{
     padding: 0;
 }
 .explanation>.child{
-    width: 85%;
+    width: 100%;
     margin:0;
-    
-
+    font-size: 2.5vh;
+    position: relative;
 }
 .tech-stacks{
     font-size: 2vh;
+    margin-top: 5%;
 }
+.explanation-2> .okoa-child{
+    width: 100%;
+    margin:0;
+    font-size: 2.5vh;
+    position: relative;
+    padding:2%;
+
+}
+.tech-stacks-2{
+    margin-top: 3%;
+    font-size: 2vh;
+
+
+}
+
 
 
 }
