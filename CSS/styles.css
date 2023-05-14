@@ -777,10 +777,13 @@ footer{
     scroll-behavior: smooth;
   }
   .my-email{
+    font-family: 'Calibre',sans-serif;
+    font-size: 3vh;
     color: #64ffda;
     border: 0.8px solid #112240;
     text-align: center;
     padding: 2%;
+    font-weight: 500;
   }
   .my-email:hover{
     border-bottom: 1px solid #64ffda;
