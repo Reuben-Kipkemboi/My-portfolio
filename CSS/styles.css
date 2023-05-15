@@ -582,6 +582,15 @@ video {
 
 
 }
+#circles{
+    background-color: #112240;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 50%;
+    box-shadow: 50px 0 0 -2px #8892B0;
+                
+                
+  }
 
 /* project 2 styling */
 .project-title-2{
