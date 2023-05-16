@@ -646,6 +646,10 @@ video {
 
 
 }
+#decor{
+    /* margin-top: -25%; */
+    position: absolute;
+}
 .project-links-2>a>span>i{
     margin-left: 15px;
     margin-top: 25px;
@@ -913,6 +917,15 @@ footer{
 }
 aside{
     display: none;
+}
+.hero-card{
+    display: none;
+}
+.about-content>.moringa-school{
+    font-size: 2.5vh;
+}
+.fa-bars{
+    color: #64ffda;
 }
 
 .my-email{
