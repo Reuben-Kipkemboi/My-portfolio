@@ -764,7 +764,10 @@ footer{
   .icon-bar a:hover {
     color: #64ffda;
   }
-
+  .animate__lightSpeedInLeft {
+    --animate-duration: 4s;
+  }
+  
   aside{
     position: fixed;
     bottom: 30%;
