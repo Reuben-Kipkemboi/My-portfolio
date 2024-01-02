@@ -874,6 +874,7 @@ html {
 
 .my-email:hover {
     border-bottom: 1px solid #64ffda;
+    border-right: 1px solid #64ffda;
 }
 
 .borders-grid {
