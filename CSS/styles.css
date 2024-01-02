@@ -705,6 +705,12 @@ video {
 
     color: #64ffda;
 }
+.icon-name{
+    /* color: #8892B0; */
+    font-weight: bolder;
+    color:#fff;
+
+}
 
 .noteworthy-projects {
     background-color: transparent;
@@ -943,7 +949,7 @@ html {
     padding: 10px;
     margin-bottom: 1.5rem;
     margin-right: 1.5rem;
-    background: #112240;
+    /* background: #112240; */
     border-radius: 2px;
     text-align: center;
     /* vertical-align: middle; */
