@@ -1,10 +1,13 @@
 # My Portfolio
 
+#### By Reuben Kipkemboi
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Description/About Me](#descriptionabout-me)
-- [My Projects](#my-projects)
-- [Contact Me](#contact-me)
+- [License](#license)
+
+- [Contact Me](#authors-info)
 - [Footer](#footer)
 
 ---
@@ -17,7 +20,7 @@ and Welcome to my portfolio! This is a showcase of my skills, projects and exper
 
 [Go Back to Top](#my-portfolio)
 
-
+---
 
 ## Description/About Me
 
@@ -28,29 +31,41 @@ practical applications, as seen by my background in web development.
 
 [Go Back to Top](#my-portfolio)
 
+---
 
-## Contact Me
+## Technologies Used
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[MIT License](LICENSE)
+
+## Live Site
+
+#### https://rotichkipkemboireuben.netlify.app/
+
+## Authors Info
 
 Feel free to reach out to me! You can connect with me through the following channels:
 
 - **Email:** rotichkipkemboireuben@gmail.com
 - **LinkedIn:** [Reuben Kipkemboi](#www.linkedin.com/in/reuben-kipkemboi)
-- **GitHub:** [Your GitHub Profile](#https://github.com/Reuben-Kipkemboi)
+- **GitHub:** [Github](#https://github.com/Reuben-Kipkemboi)
 
 I am open to collaboration and always excited to discuss new opportunities.
 
 [Go Back to Top](#my-portfolio)
 
 ---
+<p align = "center">
+    &copy; 2022 @Reuben Kipkemboi.
+</p>
 
-## Footer
 
-Thank you for visiting my portfolio! If you have any feedback or inquiries, don't hesitate to [contact me](#contact-me). 
-
-<!-- Connect with me on social media: [Twitter](#) | [Instagram](#) | [Dribbble](#) -->
-
-[Go Back to Top](#my-portfolio)
-
----
 
 
