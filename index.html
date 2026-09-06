@@ -3,476 +3,736 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Short -icon -->
-    <link rel="icon" type="image/x-icon" href="./IMAGES/favicon.ico">
+    <title>Reuben Kipkemboi — Full-Stack Software Engineer</title>
+    <meta name="description"
+        content="Reuben Kipkemboi is a full-stack software developer based in Nairobi, Kenya, building web applications with Python, Django, and JavaScript.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a192f;
+            --surface: #0e1f3d;
+            --card: #112240;
+            --line: #1d2d50;
+            --heading: #ccd6f6;
+            --bright: #e6f1ff;
+            --text: #8892b0;
+            --text-hi: #a8b2d1;
+            --accent: #64ffda;
+            --accent-dim: rgba(100, 255, 218, .12);
+            --maxw: 700px;
+            --maxw-wide: 860px;
+        }
 
-    <link rel="stylesheet" href="./CSS/styles.css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    <!-- Animate css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        .mono {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+        }
 
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-    <title>Reuben Kipkemboi's</title>
+        ::selection {
+            background: var(--accent-dim);
+            color: var(--bright);
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* ---------- layout shell ---------- */
+        .wrap {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .wrap-wide {
+            max-width: var(--maxw-wide);
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        section {
+            padding: 96px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        section:first-of-type {
+            border-top: none;
+        }
+
+        .eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: var(--accent);
+            margin-bottom: 20px;
+            letter-spacing: .01em;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--heading);
+            margin-bottom: 32px;
+            letter-spacing: -0.01em;
+        }
+
+        /* ---------- nav ---------- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: rgba(10, 25, 47, 0.85);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        nav {
+            max-width: var(--maxw-wide);
+            margin: 0 auto;
+            padding: 18px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 15px;
+            color: var(--heading);
+            font-weight: 500;
+        }
+
+        .brand span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
+
+        .nav-links a {
+            color: var(--text-hi);
+            transition: color .2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .resume-link {
+            border: 1px solid var(--accent);
+            color: var(--accent) !important;
+            padding: 8px 14px;
+            border-radius: 3px;
+            transition: background .25s ease, color .25s ease;
+        }
+
+        .resume-link:hover {
+            background: var(--accent-dim);
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        /* ---------- hero ---------- */
+        .hero {
+            padding: 120px 0 96px;
+            border-top: none;
+        }
+
+        .hero-eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent);
+            font-size: 15px;
+            margin-bottom: 18px;
+            opacity: 0;
+            animation: rise .6s ease forwards;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            line-height: 1.08;
+            color: var(--bright);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            opacity: 0;
+            animation: rise .6s ease .08s forwards;
+        }
+
+        .hero .role {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(18px, 3vw, 24px);
+            color: var(--text-hi);
+            margin-bottom: 28px;
+            min-height: 1.4em;
+            opacity: 0;
+            animation: rise .6s ease .16s forwards;
+        }
+
+        .hero .role .cursor {
+            color: var(--accent);
+        }
+
+        .hero p.lede {
+            max-width: 560px;
+            font-size: 18px;
+            color: var(--text);
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: rise .6s ease .24s forwards;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: rise .6s ease .32s forwards;
+        }
+
+        .btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            padding: 13px 22px;
+            border-radius: 3px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            transition: background .25s ease, color .25s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .btn.ghost {
+            border-color: var(--line);
+            color: var(--text-hi);
+        }
+
+        .btn.ghost:hover {
+            border-color: var(--text-hi);
+            background: transparent;
+            color: var(--bright);
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ---------- about ---------- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        .about p {
+            font-size: 17px;
+            margin-bottom: 16px;
+            max-width: 640px;
+        }
+
+        .about p strong {
+            color: var(--heading);
+            font-weight: 600;
+        }
+
+        .stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 24px;
+        }
+
+        .stack span {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: var(--accent);
+            border: 1px solid var(--line);
+            padding: 6px 12px;
+            border-radius: 3px;
+        }
+
+        /* ---------- experience ---------- */
+        .timeline {
+            position: relative;
+        }
+
+        .job {
+            position: relative;
+            padding-left: 32px;
+            padding-bottom: 40px;
+            border-left: 1px solid var(--line);
+        }
+
+        .job:last-child {
+            padding-bottom: 0;
+        }
+
+        .job::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 4px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--bg);
+            border: 2px solid var(--accent);
+        }
+
+        .job-head {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+        }
+
+        .job-role {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--heading);
+        }
+
+        .job-company {
+            color: var(--accent);
+        }
+
+        .job-company a:hover {
+            text-decoration: underline;
+        }
+
+        .job p {
+            font-size: 15px;
+            color: var(--text);
+            max-width: 560px;
+        }
+
+        /* ---------- projects ---------- */
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: var(--line);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .project {
+            background: var(--card);
+            padding: 32px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .project-name {
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--heading);
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 15px;
+            color: var(--text);
+            max-width: 480px;
+            margin-bottom: 14px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-hi);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 14px;
+            font-size: 18px;
+            white-space: nowrap;
+            padding-top: 4px;
+        }
+
+        .project-links a {
+            color: var(--text-hi);
+            transition: color .2s ease;
+        }
+
+        .project-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------- contact ---------- */
+        .contact {
+            text-align: left;
+        }
+
+        .contact h2 {
+            margin-bottom: 16px;
+        }
+
+        .contact p {
+            max-width: 520px;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+
+        .email-link {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(20px, 4vw, 30px);
+            color: var(--accent);
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 4px;
+            display: inline-block;
+            transition: border-color .2s ease;
+        }
+
+        .email-link:hover {
+            border-color: var(--accent);
+        }
+
+        .socials {
+            display: flex;
+            gap: 24px;
+            margin-top: 36px;
+            font-size: 20px;
+        }
+
+        .socials a {
+            color: var(--text-hi);
+            transition: color .2s ease;
+        }
+
+        .socials a:hover {
+            color: var(--accent);
+        }
+
+        footer {
+            padding: 32px 0 48px;
+            text-align: left;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        /* ---------- responsive ---------- */
+        @media (max-width: 720px) {
+
+            .wrap,
+            .wrap-wide {
+                padding: 0 22px;
+            }
+
+            nav {
+                padding: 16px 22px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .nav-links .hide-mobile {
+                display: none;
+            }
+
+            section {
+                padding: 64px 0;
+            }
+
+            .hero {
+                padding: 72px 0 56px;
+            }
+
+            .project {
+                grid-template-columns: 1fr;
+            }
+
+            .project-links {
+                padding-top: 0;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid" id="main-container">
-        <!-- Navbar  starts here-->
-        <nav class="navbar navbar-expand-lg navbar-scroll">
-            <div class="container-fluid">
-                <a class="navbar-brand smooth-scroll" href="/">Dev_In_Chief</a>
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item smooth-scroll">
-                            <a class="nav-link " href="#about-myself"><span class="nav-span">01.</span> // About</a>
-                        </li>
-                        <li class="nav-item smooth-scroll">
-                            <a class="nav-link" href="#work-experience"><span class="nav-span">02.</span> // Experience</a>
-                        </li>
-                        <li class="nav-item smooth-scroll">
-                            <a class="nav-link" href="#Projects"><span class="nav-span">03.</span> // Sample projects</a>
-                        </li>
-                        <li class="nav-item smooth-scroll">
-                            <a class="nav-link" href="#bottom"><span class="nav-span">04.</span>// Contact</a>
-                        </li>
-                        <li class="nav-item smooth-scroll">
-                            <a class="nav-link" href="./DOCS/Reuben-Kipkemboi-Resume.pdf"><button type="button" class="btn btn ms-3"
-                                    id="resume-btn">Resume</button></a>
-                        </li>
 
-
-                    </ul>
-                </div>
+    <header>
+        <nav>
+            <a href="#top" class="brand">reuben<span>.dev</span></a>
+            <div class="nav-links">
+                <a href="#work" class="hide-mobile">Experience</a>
+                <a href="#projects" class="hide-mobile">Projects</a>
+                <a href="#contact" class="hide-mobile">Contact</a>
+                <!-- <a href="./DOCS/Reuben-Kipkemboi-Resume.pdf" class="resume-link">Résumé</a> -->
             </div>
         </nav>
-        <!-- Navbar ends here -->
+    </header>
 
-        <div class="icon-bar">
-            <a href="https://github.com/Reuben-Kipkemboi" class="github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/_RotichReuben" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/reuben-kipkemboi/" class="linkedin"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" class="angles"><i class="fa-solid fa-angles-down"></i></a>
-        </div>
+    <main>
 
-        <aside>
-            <h6>rotichkipkemboireuben@gmail.com</h6>
-        </aside>
-
-
-        <div class="container-fluid" id="card-one-main">
-            <div class="container ">
-                <div class="row">
-
-
-                    <div class="card-1 col-md-10">
-                        <p class="small">&#x1F44B; Hi my name is</p>
-                        <h1 class="name">Reuben Kipkemboi</h1>
-                        <div class="software-engineer"><span class="typing"></span></div>
-                        <p class="small-description">Graduate in software engineering who is passionate, energetic, and
-                            skilled in <br>
-                            Agile development methodology.My worldview is shamelessly user-focused. <br>
-                            Developed and created a number of <a class="github"
-                                href="https://github.com/Reuben-Kipkemboi">Web applications</a>.
-
-                        </p>
-                        <a href="https://github.com/Reuben-Kipkemboi"><button class="btn-primary checkout-btn">check out
-                                my
-                                Projects!</button></a>
-                    </div>
-                    <div class="col-md-2 hero-card">
-                        <svg viewBox="0 0 150 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#112240" d="M40.5,-72.7C50.9,-64.2,56.6,-50.1,62.8,-37C69,-24,75.7,-12,75.7,0C75.8,12,69.1,24.1,59.9,31.9C50.7,39.7,38.8,43.2,28.4,45.9C18,48.5,9,50.2,-1.3,52.6C-11.7,54.9,-23.4,57.8,-33.8,55.1C-44.2,52.5,-53.3,44.3,-62.6,34.2C-71.9,24.1,-81.3,12,-82.4,-0.6C-83.4,-13.3,-76.2,-26.6,-66.6,-36C-56.9,-45.4,-44.8,-51,-33.3,-58.8C-21.8,-66.6,-10.9,-76.6,2.1,-80.2C15.1,-83.9,30.2,-81.1,40.5,-72.7Z" transform="translate(100 100)" />
-                          </svg>
-                          
-                        
-                    </div>
+        <section class="hero" id="top">
+            <div class="wrap">
+                <p class="hero-eyebrow mono">Hi, I'm</p>
+                <h1>Reuben Kipkemboi.</h1>
+                <p class="role mono"><span class="typed"></span><span class="cursor">|</span></p>
+                <p class="lede">Full-stack software developer based in Nairobi, Kenya. I build web applications end to
+                    end — from Postgres schema to the pixel — with a soft spot for clean, usable interfaces.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">View projects</a>
+                    <a href="#contact" class="btn ghost">Get in touch</a>
                 </div>
-                <div class="card-2">
-                    <div class="row">
-                        <div class="col-md-8" id="about-myself">
-                            <span class="about-heading"><span class="number">01.</span> About Me</span><span>
-                                <hr class="line-under"></span>
-
-                            <p class="about-content">
-                                Hello! My name is Reuben Kipkemboi, I like creating solid and amazing applications for
-                                the Web.
-                                I am a full-stack software developer based in Nairobi Kenya. I pursued a career in
-                                software engineering then later joined <a class="moringa-school"
-                                    href="https://moringaschool.com/">Moringa school</a> to perfect my Python and
-                                Javascript skills, enhancing my Full stack development knowledge.
-                                <br>
-                                Listed here are some of the technologies, languages and Frameworks I have been working
-                                with lately:
-                                <div class="row" id="lists">
-                                    <div class="col-md-12 icon-container">
-                                        <div class="tech animate__animated animate__lightSpeedInLeft">
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-angularjs-plain fa-3x"></i>
-                                                    </h3>
-                                                    <b class="icon-name">#Angular</b>
-                                            </span>
-                                            <!-- Python -->
-                                            <span class="icon-1">
-                                                <h3>
-                                                    <i class="devicon-python-plain fa-3x"></i>
-                                                    </h3>
-                                                    <b class="icon-name">#Python</b>
-                                            </span>
-                                            <!-- Django -->
-                                            <span class="icon-1">
-                                                <h3>
-                                                    <i class="devicon-django-plain fa-3x"></i>
-
-                                                    </h3>
-                                                    <b class="icon-name">#Django</b>
-                                            </span>
-                                            <!-- flask -->
-                                            
-                                            <span class="icon-1">
-                                                <h3>
-                                                    <i class="devicon-flask-original fa-3x"></i>
-                                                    </h3>
-                                                    <b class="icon-name">#Flask</b>
-                                            </span>
-                                            <!-- php -->
-                                            <span class="icon-1">
-                                                <h3><i class="devicon-php-plain fa-3x text-white"></i></h3>
-                                                <b class="icon-name">#PHP</b>
-                                            </span>
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-yii-plain fa-3x text-white"></i></h3>
-                                                <b class="icon-name">#Yii</b>
-                                            </span>
-
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-javascript-plain fa-3x " ></i></h3>
-                                                <b class="icon-name">#Javascript</b>
-                                            </span>
-
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-html5-plain fa-3x" ></i></h3>
-                                                <b class="icon-name">#Html</b>
-                                            </span>
-
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-css3-plain fa-3x text-white" ></i></h3>
-                                                <b class="icon-name">#CSS</b>
-                                            </span>
-
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-bootstrap-plain fa-3x" ></i> </h3>
-                                                <b class="icon-name">#Bootstrap</b>
-                                            </span>
-
-                                            <span class="icon-1">
-                                                <h3> <i class="devicon-figma-plain fa-3x" ></i></h3>
-                                                <b class="icon-name">#Figma</b>
-                                            </span>
-                                           
-
-                                            <span class="icon-1">
-                                                <h3>  <i class="devicon-jquery-plain fa-3x text-white"></i></h3>
-                                                <b class="icon-name">#Jquery</b>
-                                            </span>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </p>
-                        </div>
-                       
-                    </div>
-                    <div class="empty">
-                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#112240"
-                                d="M33,-51.1C43.8,-44.5,54.2,-37,61.6,-26.5C68.9,-16,73.2,-2.4,72.6,11.3C71.9,25,66.4,38.8,56.4,47.1C46.5,55.4,32.2,58.1,17.8,63.6C3.5,69.1,-10.8,77.4,-21.4,73.9C-32,70.3,-38.7,54.9,-44.4,42C-50.2,29.1,-54.8,18.8,-55.5,8.5C-56.3,-1.9,-53.1,-12.3,-47.9,-21.1C-42.7,-29.9,-35.6,-37,-27.2,-44.7C-18.9,-52.4,-9.5,-60.7,0.8,-62C11.1,-63.3,22.3,-57.6,33,-51.1Z"
-                                transform="translate(100 100)" />
-                        </svg>
-
-                    </div>
-
-                </div>
-                <div class="card-3">
-                    <div class="" id="work-experience">
-                        <span class="about-heading"><span class="number">02.</span> Professional Experience</span>
-
-                        <span>
-                            <hr class="line-under-2">
-                        </span>
-                        <div class="col-md-12">
-                            <div class="row borders-grid justify-content-center">
-
-                                <div class="col-md-5">
-                                    <div class="card" id="job-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title number">4. <a class="company-links"
-                                                    href="https://www.uonbi.ac.ke/" target="_blank"
-                                                    rel="noopener noreferrer">University of Nairobi</a></h5>
-                                            <p class="card-text">
-                                                At the University of Nairobi , I am designated as a systems developer,
-                                                working with SMIS development team to develop a Management Information
-                                                System.
-                                                <hr class="horizontal-rule">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6"></div>
-                                </div>
-
-                                <div class="col-md-5">
-                                    <div class="card" id="job-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title number">3. <a class="company-links"
-                                                    href="https://turnkeyafrica.com/" target="_blank"
-                                                    rel="noopener noreferrer">Turnkey Africa Limited</a></h5>
-                                            <p class="card-text">
-                                                As a Business Analyst at Turnkey Africa Limited, I completed extensive
-                                                training on the TurnQuest Insurance suite, acquiring comprehensive
-                                                knowledge of insurance processes and software solutions. I played a key
-                                                role in project management, assisting the General Insurance product
-                                                owner by utilizing Jira for workflow tracking, sprint planning, and task
-                                                management....
-                                                <hr class="horizontal-rule">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card" id="job-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title number">2. <a class="company-links"
-                                                    href="https://www.icta.go.ke/" target="_blank"
-                                                    rel="noopener noreferrer">ICT Authority of Kenya</a></h5>
-                                            <p class="card-text">
-                                                At the ICT Authority, I served as a system and applications development
-                                                intern, contributing significantly to projects such as designing the
-                                                user interface for the Refurbishment and Electronic Waste Management
-                                                Automation System, conducting research on an upcoming Refurbishment and
-                                                E-waste management initiative, and engaging in User Interface (UI) and
-                                                User Experience (UX) research...</p>
-
-                                            <hr class="horizontal-rule">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="card" id="job-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title number">1. <a class="company-links" href="http://"
-                                                    target="_blank" rel="noopener noreferrer">Freelance Web
-                                                    Developer</a></h5>
-                                            <p class="card-text">
-                                                Developed a Python system to decode string characters, generating
-                                                readable words or sentences and also implemented Python control
-                                                structures to create a program that identifies and counts deficient,
-                                                perfect, and abundant numbers...</p>
-
-                                            <hr class="horizontal-rule">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- projects sample -->
-                <div class="card-3">
-                    <div class="col-md-12" id="Projects">
-                        <span class="about-heading"><span class="number">03.</span> Sample Projects</span>
-                        <span>
-                            <hr class="line-under-3">
-                        </span>
-                        <!-- project1 -->
-                        <div class="row">
-                            <div class="col-md-7" id="project-one">
-                                <img class="projects-show" src="./IMAGES/project1.png " alt="">
-                            </div>
-                            <div class="col-md-5">
-                                <p class="project-title">Sample project one</p>
-                                <h4 class="project-name">Personal Gallery</h4>
-                                <div class="explanation">
-                                    <p class="child">
-                                        Personal gallery application that display's your photos and images for others to
-                                        see. The platform allows you to copy the image link and use it anywhere or
-                                        anyone else can download it via the link provided in the image details section.
-                                    </p>
-                                </div>
-                                <section class="tech-stacks">
-                                    <span class="tech-stack">Python</span>
-                                    <span class="tech-stack">Django</span>
-                                    <span class="tech-stack">HTML5</span>
-                                    <span class="tech-stack">CSS3</span>
-                                    <span class="tech-stack">Bootstrap</span>
-                                    <span class="tech-stack">Postgres</span>
-                                </section>
-                                <section class="project-links">
-                                    <a href="https://pichagalley.up.railway.app/"><span><i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-
-                                    <a href="https://github.com/Reuben-Kipkemboi/Reuben-s--Gallery"><span><i
-                                                class="fa-brands fa-github"></i></span></a>
-                                </section>
-
-                            </div>
-                        </div>
-                        <!-- project2 -->
-                        <div class="row">
-
-                            <div class="col-md-5">
-                                <p class="project-title-2">Sample project Two</p>
-                                <h4 class="project-name-2">Okoa Farm</h4>
-                                <div class="explanation-2">
-                                    <p class="okoa-child">
-                                        "OKOA" is a swahili word meaning Salvage or save.
-                                        Farming activities are delayed since the hiring process is time-consuming and
-                                        always chaotic. On the other hand, because they make untrue promises, machinery
-                                        operators should not be trusted.
-
-                                    </p>
-                                </div>
-
-                                <section class="tech-stacks-2">
-                                    <span class="tech-stack-2">Python</span>
-                                    <span class="tech-stack-2">Django</span>
-                                    <span class="tech-stack-2">HTML5</span>
-                                    <span class="tech-stack-2">CSS3</span>
-                                    <span class="tech-stack-2">Bootstrap</span>
-                                    <span class="tech-stack-2">Postgres</span>
-                                </section>
-                                <section class="project-links-2">
-                                    <a href="https://github.com/Reuben-Kipkemboi/Agric"><span><i
-                                                class="fa-brands fa-github"></i></span></a>
-
-                                    <a href="https://okoafarm.up.railway.app/"><span><i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-
-                                </section>
-
-                            </div>
-                            <div class="col-md-7" id="project-two">
-                                <img class="projects-show" src="./IMAGES/project2.png " alt="">
-                            </div>
-                        </div>
-
-                        <!-- project 3 -->
-                        <div class="row">
-                            <div class="col-md-7" id="project-three">
-                                <img class="projects-show" src="./IMAGES/project3.png " alt="">
-                            </div>
-                            <div class="col-md-5">
-                                <p class="project-title">Sample project Three</p>
-                                <h4 class="project-name">Neighbourhood</h4>
-                                <div class="explanation">
-                                    <p class="child">
-                                        A web application that allows you to be in the loop about everything happening
-                                        in your neighborhood. From contact information of different handyman to meeting
-                                        announcements or even alerts.
-                                    </p>
-                                </div>
-                                <section class="tech-stacks">
-                                    <span class="tech-stack">Python</span>
-                                    <span class="tech-stack">Django</span>
-                                    <span class="tech-stack">HTML5</span>
-                                    <span class="tech-stack">CSS3</span>
-                                    <span class="tech-stack">Bootstrap</span>
-                                    <span class="tech-stack">Postgres</span>
-                                </section>
-                                <section class="project-links">
-                                    <a href="https://lindajirani.up.railway.app/"><span><i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-
-                                    <a href="https://github.com/Reuben-Kipkemboi/neighbourhood"><span><i
-                                                class="fa-brands fa-github"></i></span></a>
-                                </section>
-
-                            </div>
-                        </div>
-                    </div>
-                    <p class="projects-btn">
-                        <a href="https://github.com/Reuben-Kipkemboi"><button class="noteworthy-projects">Check out More
-                                Projects!</button></a>
-                    </p>
-
-                </div>
-
-                <div class="row" id="decor">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#112240"
-                                d="M55.3,-8C63.7,7.9,57,38.6,38.6,51.7C20.1,64.8,-10.2,60.3,-32.5,44.2C-54.8,28.2,-69.2,0.5,-62.4,-13.1C-55.6,-26.7,-27.8,-26.3,-2.2,-25.6C23.4,-24.9,46.9,-23.9,55.3,-8Z"
-                                transform="translate(100 100)" />
-                        </svg>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-
-
             </div>
-            <!-- contact section -->
-            <div class="col-md-10" id="bottom">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img src="./VIDEO/contact.gif" alt="world-rotating" id="rotating-world">
-                    </div>
-                    <div class="col-md-5" id="left-description">
-                        <span class="about-heading-4"><span class="number-4">04.</span>
-                            Let's create Your solution.</span>
-                        <h1 class="contact-me">Contact me</h1>
-                        <p class="contact-description">
-                            Seeking assistance in realizing your goals? Your search ends here! I'm ready to collaborate and turn your ideas into reality. Feel free to reach out to me without hesitation. Contact me today!
-                        </p>
-                        <p class="my-email">
-                            rotichkipkemboireuben@gmail.com
-                        </p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="wrap">
+                <div class="eyebrow">About</div>
+                <div class="about-grid">
+                    <p>I studied software engineering, then went through <a href="https://moringaschool.com/"
+                            target="_blank" rel="noopener">Moringa School</a> to sharpen my Python and JavaScript. Since
+                        then I've worked across systems development, business analysis, and UI/UX — mostly building
+                        things on Django, with Angular and vanilla JS on the front end.</p>
+                    <p>I care most about the parts of a product people actually touch: is the flow obvious, is the page
+                        fast, does the feature solve the real problem. <strong>Shamelessly user-focused</strong>, as I
+                        like to put it.</p>
+                    <div class="stack">
+                        <span>Python</span><span>Django</span><span>Flask</span><span>Angular</span>
+                        <span>JavaScript</span><span>PHP</span><span>Yii</span><span>PostgreSQL</span>
+                        <span>HTML/CSS</span><span>Bootstrap</span><span>Figma</span><span>jQuery</span>
                     </div>
                 </div>
-
-
             </div>
+        </section>
 
-            <footer class="col-md-10">
-                Designed & Developed by Rotich Kipkemboi Reuben.
-                <br>
-                &copy; 2023 All Rights Reserved.
-            </footer>
-        </div>
+        <section id="work">
+            <div class="wrap">
+                <div class="eyebrow">2021 — Present</div>
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="job">
+                        <div class="job-head">
+                            <span class="job-role">Systems Developer</span>
+                            <span class="job-company">— <a href="https://www.uonbi.ac.ke/" target="_blank"
+                                    rel="noopener">University of Nairobi</a></span>
+                        </div>
+                        <p>Working with the SMIS development team to build the university's Management Information
+                            System.</p>
+                    </div>
+                    <div class="job">
+                        <div class="job-head">
+                            <span class="job-role">Business Analyst</span>
+                            <span class="job-company">— <a href="https://turnkeyafrica.com/" target="_blank"
+                                    rel="noopener">Turnkey Africa Limited</a></span>
+                        </div>
+                        <p>Trained on the TurnQuest Insurance suite and supported the General Insurance product owner
+                            with sprint planning and workflow tracking in Jira.</p>
+                    </div>
+                    <div class="job">
+                        <div class="job-head">
+                            <span class="job-role">Systems & Applications Development Intern</span>
+                            <span class="job-company">— <a href="https://www.icta.go.ke/" target="_blank"
+                                    rel="noopener">ICT Authority of Kenya</a></span>
+                        </div>
+                        <p>Designed the UI for a Refurbishment & E-Waste Management Automation System and ran UX
+                            research for an upcoming e-waste initiative.</p>
+                    </div>
+                    <div class="job">
+                        <div class="job-head">
+                            <span class="job-role">Freelance Web Developer</span>
+                        </div>
+                        <p>Built early Python tools — a string decoder and a perfect/deficient/abundant number
+                            classifier — alongside client web projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects">
+            <div class="wrap-wide">
+                <div class="eyebrow">Selected work</div>
+                <h2>Projects</h2>
+                <div class="projects">
 
-    </div>
+                    <div class="project">
+                        <div>
+                            <div class="project-name">Personal Gallery</div>
+                            <p class="project-desc">A photo-sharing app where users upload images and share a direct
+                                link — anyone with it can view or download, no account needed.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Django</span><span>PostgreSQL</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pichagalley.up.railway.app/" target="_blank" rel="noopener"
+                                aria-label="Live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Reuben-Kipkemboi/Reuben-s--Gallery" target="_blank"
+                                rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
 
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js">
+                    <div class="project">
+                        <div>
+                            <div class="project-name">Okoa Farm</div>
+                            <p class="project-desc">"Okoa" is Swahili for salvage — a platform connecting farmers with
+                                machinery operators, cutting out the slow, unreliable hiring process.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Django</span><span>PostgreSQL</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://okoafarm.up.railway.app/" target="_blank" rel="noopener"
+                                aria-label="Live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Reuben-Kipkemboi/Agric" target="_blank" rel="noopener"
+                                aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div>
+                            <div class="project-name">Neighbourhood</div>
+                            <p class="project-desc">Keeps a neighborhood in the loop — handyman contacts, meeting
+                                announcements, and local alerts in one place.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Django</span><span>PostgreSQL</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://lindajirani.up.railway.app/" target="_blank" rel="noopener"
+                                aria-label="Live site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Reuben-Kipkemboi/neighbourhood" target="_blank" rel="noopener"
+                                aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <p style="margin-top:28px;">
+                    <a href="https://github.com/Reuben-Kipkemboi" target="_blank" rel="noopener" class="btn ghost mono"
+                        style="font-size:13px;">More on GitHub →</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="wrap">
+                <div class="eyebrow">Get in touch</div>
+                <h2>Let's build something.</h2>
+                <p>Have a project in mind or just want to talk shop? My inbox is open — I'll get back to you.</p>
+                <a class="email-link" href="mailto:rotichkipkemboireuben@gmail.com">rotichkipkemboireuben@gmail.com</a>
+                <div class="socials">
+                    <a href="https://github.com/Reuben-Kipkemboi" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/_RotichReuben" target="_blank" rel="noopener" aria-label="Twitter"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/reuben-kipkemboi/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrap">Designed & built by Reuben Kipkemboi. © 2026.</div>
+    </footer>
+
+    <script>
+        // Single deliberate typed-text moment in the hero role line.
+        const strings = [
+            "Full-stack software engineer",
+            "UI/UX enthusiast",
+            "Building web solutions"
+        ];
+        const el = document.querySelector('.typed');
+        let s = 0, c = 0, deleting = false;
+
+        function tick() {
+            const current = strings[s];
+            if (!deleting) {
+                c++;
+                el.textContent = current.slice(0, c);
+                if (c === current.length) {
+                    deleting = true;
+                    setTimeout(tick, 1400);
+                    return;
+                }
+            } else {
+                c--;
+                el.textContent = current.slice(0, c);
+                if (c === 0) {
+                    deleting = false;
+                    s = (s + 1) % strings.length;
+                }
+            }
+            setTimeout(tick, deleting ? 40 : 65);
+        }
+        tick();
     </script>
-    <!-- typed.js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- typed.js cdn ends here -->
-    <script src="./JS/jquery-3.6.0.js"></script>
 
-    <script src="./JS/main.js"></script>
-    </div>
 </body>
 
 </html>
